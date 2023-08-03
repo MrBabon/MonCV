@@ -203,6 +203,24 @@ ul{
     color: #25546f;
 }
 
+.button3{
+    font-weight: bold;
+    color: white;
+    background-color: #25546f;
+    text-transform: uppercase;
+    padding: 18px 50px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease-in 0s;
+    
+}
+.button3:hover
+{
+    background-color: #396d8bff;
+    color: white;
+}
 /* EDUCATION */
 #education .heading h2{
     color: #25546f;
