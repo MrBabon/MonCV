@@ -57,13 +57,13 @@
 
     <section id="about" class="container-fluid">
         <div class="col-8 col-lg-4 profile-picture" >
-            <img src="image/photo-profil.jpg" alt="Christophe" class="rounded-circle">
+            <img src="image/photo-profil.jpg" alt="Christophe photo de profil" class="rounded-circle">
         </div>
 
         <div class="heading">
             <h1>Bonjour, c'est moi Christophe</h1>
             <h3>Développeur Web Full-stack - Back-end - Front-end</h3>
-            <a href="docs/CV_Christophe.pdf" class="button1">Télécharger CV</a>
+            <a href="docs/CV.pdf" target="_blank" class="button1">Télécharger CV</a>
         </div>
     </section>
     <section id="skills">
@@ -162,8 +162,7 @@
                                 <p class="text-muted"><span class="bi-clock-fill "></span> 03/2022 - 01/2023</p>
                             </div>
                             <div class="timeline-body">
-                                <p>Lecture de devis · déboitage · révision mouvement mécanique · étanchéité · emboitage</p>
-                                <p>Grande complication · mouvement perpétuel · montre à sonnerie</p>
+                                <p>Lecture de devis · déboitage · étanchéité · emboitage</p>
                                 <a href="https://www.audemarspiguet.com/com/fr/home.html" target="_blank" class="button3">Voir le site</a>
                             </div>
                         </div>
@@ -211,7 +210,7 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>BLANCPAIN</h3>
-                                <h4>Horloger décotteur </h4>
+                                <h4>Horloger</h4>
                                 <p class="text-muted"><span class="bi-clock-fill"></span> 04/2011 - 05/2017</p>
                             </div>
                             <div class="timeline-body">
@@ -335,7 +334,7 @@
 
     </section>
 
-   <!-- <section id="contact">
+    <!-- <section id="contact">
         <div class="container">
             <div class="divider"></div>
             <div class="heading">
@@ -343,53 +342,42 @@
             </div>
             <div class="row">
                 <div >
-                    <form id="contact-form" method="post" action="" role="form">
-                        <div class="row">
-                                
+                    <form id="contact-form" method="post" action="/htdocs/contact.php" role="form">
+                        <div class="row">        
                             <div class="col-md-6">
                                     <label for="firstname">Prénom<span class="blue">*</span></label>
-                                    <input type="text" id="firstname" name="firstname"  class="form-control" placeholder="Votre prénom">
+                                    <input type="text" id="firstname" name="firstname"  class="form-control" placeholder="Votre prénom" required>
                                     <p class="comments"></p>
                                 </div>
-            
                                 <div class="col-md-6">
                                     <label for="name">Nom<span class="blue">*</span></label>
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom" required>
                                     <p class="comments"></p>
                                 </div>
-            
                                 <div class="col-md-6">
                                     <label for="email">Email<span class="blue">*</span></label>
                                     <input type="email"   id="email" name="email"  class="form-control" placeholder="Votre email" required>
                                     <p class="comments"></p>
                                 </div>
-            
                                 <div class="col-md-6">
                                     <label for="phone">Téléphone</label>
                                     <input type="tel" id="phone" name="phone" class="form-control" placeholder="Votre téléphone">
                                     <p class="comments"></p>
                                 </div>
-            
                                 <div class="col-md-12">
                                     <label for="message">Message<span class="blue">*</span></label>
-                                    <textarea name="message" id="message" class="form-control" placeholder="Votre message" rows="4"></textarea>
+                                    <textarea name="message" id="message" class="form-control" placeholder="Votre message" required rows="4"></textarea>
                                     <p class="comments"></p>
                                 </div>
-            
                                 <div class="col-md-12">
                                     <p class="blue"><strong>* Ces informations sont requises</strong></p>
                                 </div>
-                                
                                 <div class="col-md-12">
                                     <input type="submit" class="button2" value="Envoyer">
                                 </div>
-            
                             </div>
                         </div>    
-                    </form>
-                    
-    
-                    
+                    </form>   
                 </div>
             </div>
         </div>
