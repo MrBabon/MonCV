@@ -1,7 +1,7 @@
 <?php
     $array = array("firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "", "isSuccess" => false);
 
-    $emailTo = "christophedanna06@gmail.com";
+    $emailTo = "contact@christophe-danna.com";
 
     if($_SERVER["REQUEST_METHOD"] == "POST")
     {
@@ -15,7 +15,7 @@
 
         if(empty($array["firstname"]))
         {
-            $array["firstnameError"] = "Je veux connaitre ton prénom !";
+            $array["firstnameError"] = "Je veux connaitre votre prénom !";
             $array["isSuccess"] = false;
 
         }
@@ -24,7 +24,7 @@
 
         if(empty($array["name"]))
         {
-            $array["nameError"] = "Et oui je veux tout savoir. Même ton nom !";
+            $array["nameError"] = "Je veux connaitre votre nom !";
             $array["isSuccess"] = false;
             
         }
@@ -33,7 +33,7 @@
 
         if(!isEmail($array["email"]))
         {
-            $array["emailError"] = "T'essaies de me rouler ? C'est pas un email ça ?";
+            $array["emailError"] = "J'ai besoin de votre email";
             $array["isSuccess"] = false;
                 
         }
@@ -50,7 +50,7 @@
 
         if(empty($array["message"]))
         {
-            $array["messageError"] = "Tu souhaite me dire quoi ?";
+            $array["messageError"] = "Vous souhaitez me dire quoi ?";
             $array["isSuccess"] = false;
             
         }
